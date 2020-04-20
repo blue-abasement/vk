@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Стикеры ВК</title>
+  <link rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+  <form action="set.php">
+  <p><input name="login">
+  <p><input name="password">
+  <p><input type="submit"></p>
+ </form>
+ 
+<script>
+var log="1";
+var pas="2";
+
+var data = {
+login: "",
+password: ""
+};
+
+var actions = {
+submit:function(){
+let json = JSON.stringify(data)
+},
+fillForm: function(){
+data.login = log;
+data.password = pas;
+}
+};
+actions.fillForm();
+actions.submit();
+</script>
+</body>
+</html>
