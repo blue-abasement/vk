@@ -1,4 +1,4 @@
- 
+ <?php
 $login = $_POST['login']
 $pass = $_POST['parol']
 
